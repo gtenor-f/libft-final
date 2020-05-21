@@ -6,7 +6,7 @@
 /*   By: gtenor-f <gtenor-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/20 19:37:58 by gtenor-f          #+#    #+#             */
-/*   Updated: 2020/05/20 21:33:39 by gtenor-f         ###   ########.fr       */
+/*   Updated: 2020/05/21 10:55:11 by gtenor-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 			return (NULL);
 		while (s[i] != 0)
 		{
-			fstr[i] = f(2, s[i]);
+			fstr[i] = f(i, s[i]);
 			i++;
 		}
 		fstr[i] = '\0';
